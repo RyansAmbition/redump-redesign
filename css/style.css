@@ -1,0 +1,105 @@
+/* page reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-sizing: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #eee;
+  color: #111;
+  line-height: 1.4;
+}
+
+/* utility classes */
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  align-items: flex-start;
+}
+/* nav styling */
+
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  background: linear-gradient(180deg, #bbb, #ddd);
+  text-align: center;
+  padding: 10px 30px;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+#navbar ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+#navbar ul li a:hover,
+.current-page {
+  background: #444;
+  color: #ddd;
+}
+
+/* recent-dumps styling */
+
+#recent-dumps {
+  flex: 1;
+  padding: 20px 30px;
+  margin: 20px 30px;
+  background: #ddd;
+}
+
+#recent-dumps .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#news {
+  flex: 3;
+  display: flex;
+  padding: 20px 30px;
+  margin: 20px 30px;
+  background: #ddd;
+}
+
+.disc-list {
+  width: 100%;
+  text-align: left;
+}
+
+.disc-list li {
+  list-style: none;
+  font-size: 0.75rem;
+  padding: 5px 15px 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.disc-list li a {
+  text-decoration: none;
+}
